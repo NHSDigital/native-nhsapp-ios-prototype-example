@@ -1,21 +1,23 @@
-//
-//  ContentView.swift
-//  native-nhsapp-ios-prototype-example
-//
-//  Created by Frankie Roberto on 01/07/2026.
-//
 
 import SwiftUI
+import NHSDesignSystem
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+
+            ScrollView {
+                
+                HomeMenu(accessibilityLabel: "Health services") {
+                  HomeMenuItem(title: "Prescriptions", systemImage: "pills.fill") { }
+                  HomeMenuItem(title: "Vaccinations", systemImage: "syringe.fill") { }
+                }
+            }
+            .padding()
+            .background(.nhsGrey5)
+            
         }
-        .padding()
+        
     }
 }
 
