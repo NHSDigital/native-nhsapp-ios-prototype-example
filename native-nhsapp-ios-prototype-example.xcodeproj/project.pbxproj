@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0354C65E2FF50ADE001FAB7A /* NHSDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 0354C65D2FF50ADE001FAB7A /* NHSDesignSystem */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		0354C64E2FF50A0A001FAB7A /* native-nhsapp-ios-prototype-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "native-nhsapp-ios-prototype-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0354C65E2FF50ADE001FAB7A /* NHSDesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "native-nhsapp-ios-prototype-example";
 			packageProductDependencies = (
+				0354C65D2FF50ADE001FAB7A /* NHSDesignSystem */,
 			);
 			productName = "native-nhsapp-ios-prototype-example";
 			productReference = 0354C64E2FF50A0A001FAB7A /* native-nhsapp-ios-prototype-example.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 0354C6452FF50A0A001FAB7A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0354C65C2FF50ADE001FAB7A /* XCRemoteSwiftPackageReference "nhsapp-design-system-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0354C64F2FF50A0A001FAB7A /* Products */;
 			projectDirPath = "";
@@ -328,6 +337,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0354C65C2FF50ADE001FAB7A /* XCRemoteSwiftPackageReference "nhsapp-design-system-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/NHSDigital/nhsapp-design-system-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0354C65D2FF50ADE001FAB7A /* NHSDesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0354C65C2FF50ADE001FAB7A /* XCRemoteSwiftPackageReference "nhsapp-design-system-ios" */;
+			productName = NHSDesignSystem;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0354C6462FF50A0A001FAB7A /* Project object */;
 }

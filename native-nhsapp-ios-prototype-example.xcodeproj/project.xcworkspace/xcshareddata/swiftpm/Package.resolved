@@ -1,0 +1,15 @@
+{
+  "originHash" : "1cc2698c053cd042d3ba0b0ddc646b7c375c36710d066b4234a4c5f290a23161",
+  "pins" : [
+    {
+      "identity" : "nhsapp-design-system-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/NHSDigital/nhsapp-design-system-ios",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d9fd9465439a2617afb33aae07bb92b416db6f3f"
+      }
+    }
+  ],
+  "version" : 3
+}
