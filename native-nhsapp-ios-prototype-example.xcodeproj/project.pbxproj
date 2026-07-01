@@ -8,7 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		0354C65E2FF50ADE001FAB7A /* NHSDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 0354C65D2FF50ADE001FAB7A /* NHSDesignSystem */; };
+		0354C65F2FF51852001FAB7A /* NHSDesignSystem in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 0354C65D2FF50ADE001FAB7A /* NHSDesignSystem */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0354C6602FF51852001FAB7A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0354C65F2FF51852001FAB7A /* NHSDesignSystem in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0354C64E2FF50A0A001FAB7A /* native-nhsapp-ios-prototype-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "native-nhsapp-ios-prototype-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +75,7 @@
 				0354C64A2FF50A0A001FAB7A /* Sources */,
 				0354C64B2FF50A0A001FAB7A /* Frameworks */,
 				0354C64C2FF50A0A001FAB7A /* Resources */,
+				0354C6602FF51852001FAB7A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
