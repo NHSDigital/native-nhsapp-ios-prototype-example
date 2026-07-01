@@ -1,10 +1,3 @@
-//
-//  native_nhsapp_ios_prototype_exampleApp.swift
-//  native-nhsapp-ios-prototype-example
-//
-//  Created by Frankie Roberto on 01/07/2026.
-//
-
 import SwiftUI
 
 @main
