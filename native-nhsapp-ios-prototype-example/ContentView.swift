@@ -8,10 +8,10 @@ struct ContentView: View {
 
             ScrollView {
                 
-                HomeMenu(accessibilityLabel: "Health services") {
-                  HomeMenuItem(title: "Prescriptions", systemImage: "pills.fill") { }
+                HomeMenu(accessibilityLabel: "Health services", items: [
+                  HomeMenuItem(title: "Prescriptions", systemImage: "pills.fill") { },
                   HomeMenuItem(title: "Vaccinations", systemImage: "syringe.fill") { }
-                }
+                ])
             }
             .padding()
             .background(.nhsGrey5)
