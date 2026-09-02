@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/NHSDigital/nhsapp-design-system-ios",
       "state" : {
-        "branch" : "main",
-        "revision" : "d9fd9465439a2617afb33aae07bb92b416db6f3f"
+        "revision" : "eb9377530e8c987762684f49565499c3b2166573",
+        "version" : "2.0.1"
       }
     }
   ],
