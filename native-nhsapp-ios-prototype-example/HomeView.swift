@@ -3,14 +3,18 @@ import SwiftUI
 import NHSDesignSystem
 
 struct HomeView: View {
+    @State private var path = NavigationPath()
+    
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             ScrollView {
                 VStack(spacing: 24) {
                     ProfileCard(name: "Kevin Francis", nhsNumber: "999 123 4567", action: { })
 
                     HomeMenu(accessibilityLabel: "Health services", items: [
-                        HomeMenuItem(title: "Prescriptions", systemImage: "pills.fill") { },
+                        HomeMenuItem(title: "Prescriptions", systemImage: "pills.fill") {
+                            path.append("prescriptions")
+                        },
                         HomeMenuItem(title: "Appointments", systemImage: "calendar.badge.clock") { },
                         HomeMenuItem(title: "Test results", systemImage: "testtube.2") { },
                         HomeMenuItem(title: "Vaccinations", systemImage: "syringe.fill") { },
@@ -49,6 +53,14 @@ struct HomeView: View {
             .toolbar {
                 NHSLogoToolbarItem()
                 MessagesToolbarItem(unreadCount: 3) { }
+            }
+            .navigationDestination(for: String.self) { destination in
+                switch destination {
+                case "prescriptions":
+                    PrescriptionsView()
+                default:
+                    EmptyView()
+                }
             }
         }
     }
