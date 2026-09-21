@@ -2,7 +2,7 @@
 import SwiftUI
 import NHSDesignSystem
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
         NavigationStack {
 
