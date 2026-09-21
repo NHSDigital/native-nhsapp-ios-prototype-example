@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct native_nhsapp_ios_prototype_exampleApp: App {
+struct NHSPrototypeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
