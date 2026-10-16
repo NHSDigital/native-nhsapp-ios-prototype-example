@@ -49,7 +49,7 @@ struct HomeView: View {
                 }
             }
             .padding()
-            .background(.nhsGrey5)
+            .background(.nhsBackground)
             .toolbar {
                 NHSLogoToolbarItem()
                 MessagesToolbarItem(unreadCount: 3) { }
