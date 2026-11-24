@@ -23,9 +23,9 @@ struct HomeView: View {
                     ])
 
                     CardActionGroup(header: "NHS information and support", style: .secondary, actions: [
-                        CardAction(title: "Check your symptoms using 111 Online", style: .plain, action: { }),
-                        CardAction(title: "Health A-Z", style: .plain, action: { }),
-                        CardAction(title: "Find NHS services near you", style: .plain, action: { })
+                        CardAction(title: "Check your symptoms using 111 Online", action: { }),
+                        CardAction(title: "Health A-Z", action: { }),
+                        CardAction(title: "Find NHS services near you", action: { })
                     ])
 
                     CampaignCard(
